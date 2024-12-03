@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIn0.9h0uUOtEhbcdYF7rPJi2p0lqfdbwCTq69a7HahTBmqw",
+      "profile": {
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+      }
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIn0.uUhtmccmDIK8fG3vmsNfqQ0N5i556nAzJyLyOsxQ4no",
+      "profile": {
+        "name": "jane.doe@example.com"
+      }
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello, World!",
+      "content": "This is a test post.",
+      "author": 1
+    },
+    {
+      "id": 2,
+      "title": "Another Post",
+      "content": "This is another test post.",
+      "author": 1
+    },
+    {
+      "id": 3,
+      "title": "Yet Another Post",
+      "content": "This is yet another test post.",
+      "author": 2
+    }
+  ]
+}
