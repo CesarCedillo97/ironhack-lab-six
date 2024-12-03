@@ -36,6 +36,10 @@ const LoginScreen: React.FC = ({ navigation }) => {
     }
   };
 
+  const disabledButton = () => {
+    return username.length === 0 || password.length === 0 || error !== "";
+  };
+
   return (
     <View>
       <TextInput
@@ -50,7 +54,7 @@ const LoginScreen: React.FC = ({ navigation }) => {
         value={password}
         onChangeText={(text) => validateFields(text, "password")}
       />
-      <Button title="Login" onPress={handleLogin} />
+      <Button title="Login" onPress={handleLogin} disabled={disabledButton()} />
       {error ? <Text>{error}</Text> : null}
     </View>
   );
